@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 10000px;
+        }
+        h1 ~ p{
+            color: blue;
+        }
+        div > span{
+            font-style: italic;
+        }
+        input[type="text"]{
+            border: 1px solid red;
+        }
+        input[type="password"]{
+            border: 1px solid blue;
+        }
+        input[type="number"]{
+            border: 1px solid green;
+        }
+        input[type="email"]{
+            border: 1px solid violet;
+        }
+        /* [href^="https"]{
+            color: teal;
+        }
+        [href$="8080"]{
+            font-weight: 900;
+        }
+        [href*="aliexpress"]{
+            font-style: italic;
+        } */
+        p::selection{
+            background: black;
+            color: chartreuse;
+        }
+        h3::before{
+            content: '---- ';
+        }
+        h3::after{
+            content: ' ----';
+        }
+        ul{
+            counter-reset: counterPlanet;
+        }
+        li::before{
+            counter-increment: counterPlanet +1;
+            content: "Планета " counter(counterPlanet)". ";
+        }
+
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color:darkgreen;
+        }
+        a:active{
+            font-weight: bold;
+        }
+        a:focus{
+            font-style: italic;
+        }
+        a:hover{
+            background-color:aqua;
+        }
+        li:nth-child(3n+2){
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>объявления</h1>
+    <p>test</p>
+    <p>hello</p>
+    <p>text</p>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse voluptatem vero, unde blanditiis nostrum veritatis expedita eos dolor reprehenderit saepe quam quasi dolorum perspiciatis vel provident explicabo eveniet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse voluptatem vero, unde blanditiis nostrum veritatis expedita eos dolor reprehenderit saepe quam quasi dolorum perspiciatis vel provident explicabo eveniet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse voluptatem vero, unde blanditiis nostrum veritatis expedita eos dolor reprehenderit saepe quam quasi dolorum perspiciatis vel provident explicabo eveniet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse voluptatem vero, unde blanditiis nostrum veritatis expedita eos dolor reprehenderit saepe quam quasi dolorum perspiciatis vel provident explicabo eveniet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse voluptatem vero, unde blanditiis nostrum veritatis expedita eos dolor reprehenderit saepe quam quasi dolorum perspiciatis vel provident explicabo eveniet repellendus.</p>
+    <h3>hello</h3>
+    <span>span1</span>
+    <div>
+        <span>span2</span>
+        <p>
+            <span>
+                span3   
+            </span>
+        </p>
+    </div>
+    <hr>
+    <h3>hello</h3>
+    <input type="text" title="hello"> <br>
+    <input type="number"> <br>
+    <input type="password" title="hello"> <br>
+    <input type="email"> <br>
+    <hr>
+    <h3>test</h3>
+    <a href="https://av.by">av</a> <br>
+    <a href="https://aliexpress.ru">aliexpress</a> <br>
+    <a href="http://142.93.172.35:8080">142.93.172.35</a> <br>
+
+    <ul>
+        <li>Земля</li>
+        <li>Марс</li>
+        <li>Венера</li>
+        <li>Юпитер</li>
+        <li>Плутон</li>
+        <li>Меркурий</li>
+        <li>Меркурий</li>
+        <li>Меркурий</li>
+        <li>Меркурий</li>
+        <li>Меркурий</li>
+        <li>Меркурий</li>
+        <li>Меркурий</li>
+    </ul>
+
+</body>
+</html>
